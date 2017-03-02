@@ -175,7 +175,7 @@ namespace BotVentic
                             int stone;
                             if (Int32.TryParse(words[i - 1], out stone))
                             {
-                                reply = stone + " Stone = " + (stone * 14) + " Pounds :D";
+                                reply = stone + " Stone = " + (stone * 14) + " Pounds";
                             }
                         }
                         break;
