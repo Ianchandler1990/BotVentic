@@ -111,7 +111,7 @@ namespace BotVentic
             try
             {
                 await Client.Connect(Config.Token, TokenType.Bot);
-                Client.SetGame("3v.fi/l/BotVentic");
+                Client.SetGame("Twitch Simulator");
                 State = ConnectionState.Connected;
                 Console.WriteLine("Connected!");
             }
