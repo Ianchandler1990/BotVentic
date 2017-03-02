@@ -157,6 +157,29 @@ namespace BotVentic
                         }
                         break;
                 }
+                switch (word)
+                {
+                    case "pounds":
+                        if (i >= 1)
+                        {
+                            int pounds;
+                            if (Int32.TryParse(words[i - 1], out pounds))
+                            {
+                                reply = pounds + " Pounds = " + (pounds / 14) + "Stone";
+                            }
+                        }
+                        break;
+                    case "stone":
+                        if (i >= 1)
+                        {
+                            int stone;
+                            if (Int32.TryParse(words[i - 1], out stone))
+                            {
+                                reply = stone + " Stone = " + (stone * 14) + " Pounds";
+                            }
+                        }
+                        break;
+                }
             }
 
             return reply;
@@ -291,7 +314,7 @@ namespace BotVentic
                     }
                     break;
                 case "!source":
-                    reply = "https://github.com/3ventic/BotVentic";
+                    reply = "https://github.com/Ianchandler1990/BotVentic";
                     break;
                 case "!frozen":
                     if (words.Length >= 2 && words[1] != "pizza")
