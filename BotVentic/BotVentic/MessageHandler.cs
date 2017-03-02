@@ -165,7 +165,7 @@ namespace BotVentic
                             int pounds;
                             if (Int32.TryParse(words[i - 1], out pounds))
                             {
-                                reply = pounds + " Pounds = " + (pounds / 14) + "Stones Kappa";
+                                reply = pounds + " Pounds = " + (pounds / 14) + "Stones;
                             }
                         }
                         break;
